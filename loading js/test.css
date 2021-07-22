@@ -1,0 +1,104 @@
+*{box-sizing: border-box;}
+:root
+{
+  --radius: 15px;
+  --blau: #0195cc;
+}
+body
+{
+  height:100vh;
+  background-color: var(--blau);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "segoe ui";
+}
+
+
+.container
+{
+  background-color: white;
+  border-radius: var(--radius);
+  width: 400px;
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container button
+{
+  width: 60%;
+  padding: 15px 0;
+  border-radius: var(--radius);
+  outline: none;
+  border: none;
+  background-color: var(--blau);
+  color: white;
+  cursor: pointer;
+}
+.container input
+{
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px 0;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: var(--radius);
+  background-color: #ebebeb;
+}
+
+.sign
+{
+  margin-bottom: 30px;
+}
+.sign span
+{
+  cursor: pointer;
+}
+#anmelden
+{
+  margin-right: 15px;
+  font-weight: bold;
+  border-bottom: 2px solid var(--blau);
+}
+#registrieren
+{
+  color: #b9b9b9;
+}
+
+
+
+
+@keyframes drehen
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+
+  50%
+  {
+    border-top-color: red;
+  }
+
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+
+
+.kreis
+{
+  width: 40px;
+  height: 40px;
+  margin-top: 25px;
+  opacity: 0;
+
+  border: 6px solid #bfbfbf;
+  border-top: 6px solid black;
+  border-radius: 50%;
+
+  animation: drehen 2s linear infinite;
+}

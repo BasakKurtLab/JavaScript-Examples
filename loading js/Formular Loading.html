@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="sign">
+      <span id="anmelden" onclick="klickAnmelden();">Anmelden</span>
+      <span id="registrieren" onclick="klickRegistrieren();">Registrieren</span>
+    </div>
+    <input type="text" placeholder="Benutzername">
+    <input type="password" placeholder="Passwort">
+    <button onclick="loading();">ANMELDEN</button>
+    <div class="kreis" id="kreis"></div>
+  </div>
+
+
+  <script>
+
+    var registrieren = document.getElementById("registrieren");
+    var anmelden = document.getElementById("anmelden");
+
+
+    function loading()
+    {
+      var kreis = document.getElementById("kreis");
+      kreis.style.opacity = "1";
+
+    }
+
+    function klickAnmelden()
+    {
+      anmelden.style.fontWeight = "bold";
+      anmelden.style.color = "#000";
+      anmelden.style.borderBottom = "2px solid var(--blau)";
+
+      registrieren.style.fontWeight = "normal";
+      registrieren.style.color = "#b9b9b9";
+      registrieren.style.borderBottom = "none";
+    }
+
+    function klickRegistrieren()
+    {
+
+      registrieren.style.fontWeight = "bold";
+      registrieren.style.color = "#000";
+      registrieren.style.borderBottom = "2px solid var(--blau)";
+
+
+      anmelden.style.fontWeight = "normal";
+      anmelden.style.color = "#b9b9b9";
+      anmelden.style.borderBottom = "none";
+    }
+
+
+  </script>
+</body>
+</html>
