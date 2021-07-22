@@ -1,0 +1,100 @@
+*{box-sizing: border-box;}
+
+body
+{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI";
+}
+
+.container
+{
+    width: 500px;
+    padding: 25px;
+    border: 1px solid #cccccc;
+
+    position: relative;
+}
+
+.form
+{
+    display: none;
+    flex-direction: column;
+}
+.form span
+{
+    font-size: 0.9em;
+    margin-bottom: 12px;
+}
+.form input
+{
+    margin-bottom: 8px;
+    outline: none;
+    padding: 5px 8px;
+}
+
+.container h2
+{
+    margin-top: 0;
+}
+
+.buttons
+{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button
+{
+    outline: none;
+    border: none;
+    padding: 10px 23px;
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#zurueck
+{
+    opacity: 0;
+}
+
+#gesendet
+{
+    display: none;
+    text-align: center;
+}
+
+#progress
+{
+    height: 8px;
+    width: 5%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: darkorange;
+    transition: width 0.4s;
+}
+
+#schritte
+{
+    display: flex;
+    width: 60px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#schritte div
+{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffead1;
+}
