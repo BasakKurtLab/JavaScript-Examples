@@ -1,0 +1,71 @@
+*{box-sizing: border-box;}
+body
+{
+    height:100vh;
+    margin: 0;
+    font-family: 'Segoe UI';
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: black;
+    color: white;
+
+    transition: background-color 1s;
+}
+
+h1
+{
+    transition: color 1s;
+}
+
+.licht
+{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.licht img
+{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: opacity 1s;
+}
+#ein
+{
+    opacity: 0;
+}
+
+
+.buttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons button
+{
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn-ein
+{
+    border-radius: 15px 0 0 15px;
+    background-color: #6b6b6b;
+    color: #acacac;
+}
+#btn-aus
+{
+    border-radius: 0 15px 15px 0;
+    background-color: #db7100;
+    color: white;
+}
