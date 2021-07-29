@@ -1,0 +1,52 @@
+*{box-sizing: border-box;}
+
+
+
+
+body
+{
+    font-family: "Segoe UI";
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(48,48,48,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+.container>div
+{
+    margin-top: 350px;
+    margin-bottom: 350px;
+    background-color: rgb(14, 14, 14);
+    color: white;
+    padding: 80px 100px;
+    font-weight: bold;
+    font-size: 2em;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 25px 5px rgba(0,0,0,0.45); 
+    box-shadow: 5px 5px 25px 5px rgba(0,0,0,0.45);
+}
+
+.preis
+{
+    color: white;
+    font-size: 2.8em;
+    font-weight: bold;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+}
+
+.iphone
+{
+    position: fixed;
+    left: 7%;
+    top: 30%;
+}
+.iphone>img
+{
+    width: 300px;
+}
