@@ -1,0 +1,76 @@
+*{box-sizing: border-box;}
+
+body
+{
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+.menu
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li
+{
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+}
+.menu li div:first-child
+{
+    background-color: #545454;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+    margin-bottom: 6px;
+}
+.menu li:hover:not(.aktiv) div:first-child
+{
+    background-color: #2e2e2e;
+}
+.menu li span
+{
+    font-size: 0.8em;
+    opacity: 0%;
+    transition: opacity 0.3s;
+}
+.menu li:hover span
+{
+    opacity: 100%;
+}
+
+li.aktiv div:first-child
+{
+    background-color: #277b7e;
+}
+li.aktiv span
+{
+    color: #277b7e;
+}
+
+
+.suchen #suchleiste
+{
+    display: block;
+    padding: 12px;
+    background-color: #277b7e;
+    width: 300px;
+    height: 50px;
+
+    position: absolute;
+    top: 52px;
+    right: 0;
+
+    opacity: 0;
+}
+
+.suchen #suchleiste input
+{
+    width: 100%;
+    height: 100%;
+}
