@@ -1,0 +1,93 @@
+*{box-sizing: border-box;}
+
+body
+{
+    font-family: "Segoe UI";
+    height: 100vh;
+    margin: 0;
+}
+
+.titel
+{
+    text-align: center;
+    font-size: 2em;
+    color: darkblue;
+}
+
+#bilder
+{
+    display: flex;
+    width: 900px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+#bilder>img
+{
+    width: 250px;
+    margin: 20px;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.51);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+#bilder>img:hover
+{
+    transform: scale(110%);
+}
+
+#lightbox
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.62);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(100vw);
+    transition: transform 0.5s;
+}
+#lightbox img
+{
+    max-width: 100%;
+    max-height: 100%;
+
+    transition: transform 0.5s;
+    transform: scale(0);
+}
+#lightbox i
+{
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: -1em;
+    right: -1em;
+    cursor: pointer;
+}
+
+.imgContainer
+{
+    height: 100%;
+    position: relative;
+}
+
+@media (max-width: 900px)
+{
+    #bilder
+    {
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 760px)
+{
+    #lightbox
+    {
+        padding: 30px;
+    }
+}
