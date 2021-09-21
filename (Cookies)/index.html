@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://github.com/js-cookie/js-cookie/releases/download/v3.0.1/js.cookie.min.js"></script>
+</head>
+<body>
+    
+    <div id="loginForm">
+        <input type="text" placeholder="Benutzername" id="bn"> <br>
+        <input type="password" placeholder="Passwort" id="pw"> <br><br>
+        <label><input type="checkbox" id="eingeloggtCheck" checked> Eingeloggt bleiben</label>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="userProfile">
+        Herzlich willkommen!
+
+        <button onclick="hinzufugen('iPhone 5', 300)">iPhone 5 - 300€</button>
+        <button onclick="hinzufugen('Nike Schuhe', 70)">Nike Schuhe - 70€</button>
+        <button onclick="hinzufugen('Herrenuhr', 100)">Herrenuhr - 100€</button>
+        <button onclick="hinzufugen('Tastatur', 30)">Tastatur - 30€</button>
+        <button onclick="hinzufugen('Maus', 20)">Maus - 20€</button>
+        <br>
+        Warenkorb:
+        <div id="warenkorb">
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
