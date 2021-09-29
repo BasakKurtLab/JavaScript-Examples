@@ -1,0 +1,11 @@
+*{box-sizing: border-box; font-family: "segoe ui";}
+
+body
+{
+    margin: 0;
+}
+
+.container
+{
+    text-align: center;
+}
